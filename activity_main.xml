@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F8E9"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bookstore1" />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/location"
+        android:scaleType="fitCenter"
+        android:layout_toLeftOf="@id/address"
+        android:layout_marginTop="403dp"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/loc"
+        />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="27dp"
+        android:id="@+id/ppic"
+        android:adjustViewBounds="true"
+        android:src="@drawable/phone"
+        android:layout_above="@id/web"
+        android:layout_toLeftOf="@id/phone"
+        android:layout_marginLeft="50dp"
+        />
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/web"
+        android:adjustViewBounds="true"
+        android:layout_toLeftOf="@id/web"
+        android:layout_below="@id/ppic"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        />
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="15dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BookWorms"
+        android:textSize="40sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/text1"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/text1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-11dp"
+        android:layout_marginRight="20dp"
+        android:text="Where the world comes to read :)"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/address"
+        android:layout_centerHorizontal="true"
+        android:text="Old Road, Raymondville, Texas"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="410dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/phone"
+        android:text="Phone number: +971568797002"
+        android:layout_below="@id/address"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/phone"
+        android:text="www.bookwroms.com"
+        android:textSize="18sp"
+        android:id="@+id/web"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time:Come in anytime and grab a book"
+        android:layout_below="@id/web"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:id="@+id/time"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/about"
+        android:text="About Us: BookWorms is a company which collects used books and sells them for a reasonable price. Our motive is to encourage reading within our community."
+        android:layout_below="@id/time"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>
